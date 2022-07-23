@@ -18,6 +18,6 @@ $text = $_REQUEST['q'];
   if (empty($text)) {
     echo "Query is empty";
   } else {
-echo  '{"translatedText":"'.$tr->translate('$text').'"}';
+echo  '{"translatedText":"'.$tr->translate($text).'"}';
     
     }
