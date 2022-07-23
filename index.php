@@ -14,4 +14,10 @@ $tr->setSource('nl'); // Translate from English
 $tr->setSource(); // Detect language automatically
 $tr->setTarget('en'); // Translate to Georgian
 
-echo $tr->translate('Google wordt geblokkeerd in pro-Russische gebieden in Oekraïne');
+$text = $_REQUEST['q'];
+  if (empty($text)) {
+    echo "Query is empty";
+  } else {
+echo  '{"translatedText":"'.$tr->translate('$text').'"}';
+    
+    }
