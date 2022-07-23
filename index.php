@@ -18,6 +18,14 @@ $text = $_REQUEST['q'];
   if (empty($text)) {
     echo "Query is empty";
   } else {
-echo  '{"translatedText":"'.$tr->translate($text).'"}';
+//echo  '{"translatedText":"'.$tr->translate($text).'"}';
+    
+    $output = array(
+    	'translatedText' =>$tr->translate($text)
+
+	);
+  
+    print_r(json_encode($output, JSON_UNESCAPED_SLASHES));
+    
     
     }
