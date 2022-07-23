@@ -1,8 +1,6 @@
 <?php
 namespace Stichoza\GoogleTranslate\Tests;
 
-use PHPUnit\Framework\TestCase;
-use Stichoza\GoogleTranslate\GoogleTranslate;
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 ignore_user_abort(true);
