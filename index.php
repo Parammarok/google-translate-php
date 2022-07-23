@@ -1,4 +1,5 @@
 <?php
+require_once ('vendor/autoload.php');
 use Stichoza\GoogleTranslate\GoogleTranslate;
 
 ini_set('display_errors', 1);
