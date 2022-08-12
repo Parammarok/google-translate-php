@@ -14,7 +14,7 @@ $from = $_REQUEST['from'];
 $to= $_REQUEST['to'];
 
 $tr->setSource($from); // Translate from English
-$tr->setSource(); // Detect language automatically
+//$tr->setSource(); // Detect language automatically
 $tr->setTarget($to); // Translate to Georgian
 
 $text = $_REQUEST['q'];
