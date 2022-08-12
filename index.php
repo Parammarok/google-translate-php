@@ -10,9 +10,12 @@ error_reporting(E_ALL);
 ini_set("memory_limit", "4500M");
 set_time_limit(0);
 $tr = new GoogleTranslate(); // Translates to 'en' from auto-detected language by default
-$tr->setSource('nl'); // Translate from English
+$from = $_REQUEST['from'];
+$to= $_REQUEST['to'];
+
+$tr->setSource($from); // Translate from English
 $tr->setSource(); // Detect language automatically
-$tr->setTarget('en'); // Translate to Georgian
+$tr->setTarget($to); // Translate to Georgian
 
 $text = $_REQUEST['q'];
   if (empty($text)) {
